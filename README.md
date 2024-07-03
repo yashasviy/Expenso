@@ -1,11 +1,11 @@
-# Expense Tracker (MERN)
+# Expenso (MERN)
 
 > Full stack expense tracker
 
 ## Usage
 
 ```
-change config.env file in config folder
+add your own mongoDB string in config.env
 ```
 
 ```
@@ -15,17 +15,8 @@ change config.env file in config folder
  
  # Run front and backend
  npm run dev
+
+Developed by Yashasvi Yadav and Mohd Yuman
+
+Expenso is an expense tracker that keeps a check on the income, it also tells you how much money you have right now and how much money you have spent.
  
- # Backend only
- npm run server
- 
- # Frontend only
- npm run client
- 
- # Build client
- cd client
- npm run build
- 
- # Prod
- npm start
-```
