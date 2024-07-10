@@ -38,7 +38,26 @@ Adding new entries is a breeze. Just fill in the details and amount, and hit "Ad
 - Positive amounts = Income
 - Negative amounts = Expenses
 
+
+
+![image](https://github.com/yashasviy/Expenso/assets/142726861/bdc2a629-d495-4337-bd5c-299e8d7d66f7)
+
+
+
+
+
 Your income and expenses will be automatically calculated and displayed at the top. Check out the history section for a quick view of all your past transactions, nicely color-coded so you can easily see what's what.
+
+![image](https://github.com/yashasviy/Expenso/assets/142726861/b8a7871a-8dc5-46ef-93ba-17b6b7693d7b)
+
+
+
+![image](https://github.com/yashasviy/Expenso/assets/142726861/2d8512cf-afe9-4a4c-9c8b-3f1219c47c5f)
+
+![image](https://github.com/yashasviy/Expenso/assets/142726861/7b992df0-ad09-4a67-b052-660fb7ad9d3e)
+
+
+
 
 ## What We Used
 
