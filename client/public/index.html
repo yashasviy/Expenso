@@ -1,43 +1,191 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+:root {
+  --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  --primary-color: #4a90e2;
+  --secondary-color: #50e3c2; 
+  --background-color: #c0d6e4; 
+  --text-color: #333; 
+  --btn-bg-color: #e0aabf; 
+  --btn-hover-bg-color: #d78b9a; 
+  --btn-hover-transform: scale(1.05); 
+}
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+* {
+  box-sizing: border-box;
+}
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
-</html>
+body {
+  background-color: var(--background-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  color: var(--text-color);
+}
+
+.container {
+  margin: 40px auto;
+  width: 400px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: var(--box-shadow);
+  border-radius: 8px;
+}
+
+/* h1 {
+  font-size: 3em;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin: 0 0 20px;
+  color: black;
+} */
+
+h1 {
+  font-size: 3em;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin: 20px 0 10px; 
+  color: black; 
+}
+
+h3 {
+  border-bottom: 2px solid var(--secondary-color);
+  padding-bottom: 10px;
+  margin: 40px 0 10px;
+}
+
+h4 {
+  margin: 0;
+  text-transform: uppercase;
+  color: var(--primary-color);
+}
+
+.inc-exp-container {
+  background-color: #fff;
+  box-shadow: var(--box-shadow);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+  border-radius: 8px;
+}
+
+.inc-exp-container > div {
+  flex: 1;
+  text-align: center;
+}
+
+.inc-exp-container > div:first-of-type {
+  border-right: 1px solid #dedede;
+}
+
+.money {
+  font-size: 22px;
+  letter-spacing: 1px;
+  margin: 5px 0;
+}
+
+.money.plus {
+  color: var(--secondary-color);
+}
+
+.money.minus {
+  color: #e74c3c;
+}
+
+label {
+  display: inline-block;
+  margin: 10px 0;
+}
+
+input[type='text'],
+input[type='number'] {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  display: block;
+  font-size: 16px;
+  padding: 12px;
+  width: 100%;
+}
+
+:root {
+  --btn-bg-color: #f77f7f;
+  --btn-hover-bg-color: #e55a5a; 
+  --btn-hover-transform: scale(1.05); 
+}
+
+.btn {
+  cursor: pointer;
+  background-color: var(--btn-bg-color);
+  box-shadow: var(--box-shadow);
+  color: #fff;
+  border: 0;
+  display: block;
+  font-size: 18px;
+  margin: 10px 0 30px;
+  padding: 14px;
+  width: 100%;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+  background-color: var(--btn-hover-bg-color);
+  transform: var(--btn-hover-transform);
+}
+
+.btn:focus,
+.delete-btn:focus {
+  outline: 0;
+}
+
+.list {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 40px;
+}
+
+.list li {
+  background-color: #fff;
+  box-shadow: var(--box-shadow);
+  color: var(--text-color);
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 4px;
+}
+
+.list li.plus {
+  border-right: 5px solid var(--secondary-color);
+}
+
+.list li.minus {
+  border-right: 5px solid #e74c3c;
+}
+
+.delete-btn {
+  cursor: pointer;
+  background-color: #e74c3c;
+  border: 0;
+  color: #fff;
+  font-size: 20px;
+  line-height: 20px;
+  padding: 2px 5px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-100%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 50%;
+}
+
+.list li:hover .delete-btn {
+  opacity: 1;
+}
