@@ -44,7 +44,6 @@ Your income and expenses will be automatically calculated and displayed at the t
 
 - **React**: To build the UI.
 - **CSS**: For styling the app.
-- **Context API**: For managing the state.
 
 
 
