@@ -49,3 +49,6 @@ Your income and expenses will be automatically calculated and displayed at the t
 
 
 And that's it! Expenso is all about making money management simple and stress-free. Dive in and start tracking your finances with ease. Happy tracking!
+
+
+Developed by Mohd Yuman and Yashasvi Yadav
