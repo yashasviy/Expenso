@@ -1,7 +1,14 @@
-@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
 
 :root {
-  --box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  --primary-color: #4a90e2; /* Blue */
+  --secondary-color: #50e3c2; /* Green */
+  --background-color: #c0d6e4; /* Greyish Blue */
+  --text-color: #333; /* Dark Gray */
+  --btn-bg-color: #e0aabf; /* Greyish-Pink */
+  --btn-hover-bg-color: #d78b9a; /* Darker Greyish-Pink */
+  --btn-hover-transform: scale(1.05); /* Slightly larger on hover */
 }
 
 * {
@@ -9,28 +16,35 @@
 }
 
 body {
-  background-color: #f7f7f7;
+  background-color: var(--background-color);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
   margin: 0;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  color: var(--text-color);
 }
 
 .container {
-  margin: 30px auto;
-  width: 350px;
+  margin: 40px auto;
+  width: 400px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: var(--box-shadow);
+  border-radius: 8px;
 }
 
 h1 {
+  font-weight: 700;
   letter-spacing: 1px;
-  margin: 0;
+  margin: 0 0 20px;
+  color: var(--primary-color);
 }
 
 h3 {
-  border-bottom: 1px solid #bbb;
+  border-bottom: 2px solid var(--secondary-color);
   padding-bottom: 10px;
   margin: 40px 0 10px;
 }
@@ -38,6 +52,7 @@ h3 {
 h4 {
   margin: 0;
   text-transform: uppercase;
+  color: var(--primary-color);
 }
 
 .inc-exp-container {
@@ -47,6 +62,7 @@ h4 {
   display: flex;
   justify-content: space-between;
   margin: 20px 0;
+  border-radius: 8px;
 }
 
 .inc-exp-container > div {
@@ -59,17 +75,17 @@ h4 {
 }
 
 .money {
-  font-size: 20px;
+  font-size: 22px;
   letter-spacing: 1px;
   margin: 5px 0;
 }
 
 .money.plus {
-  color: #2ecc71;
+  color: var(--secondary-color);
 }
 
 .money.minus {
-  color: #c0392b;
+  color: #e74c3c;
 }
 
 label {
@@ -79,26 +95,40 @@ label {
 
 input[type='text'],
 input[type='number'] {
-  border: 1px solid #dedede;
-  border-radius: 2px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
   display: block;
   font-size: 16px;
-  padding: 10px;
+  padding: 12px;
   width: 100%;
+}
+
+:root {
+  --btn-bg-color: #f77f7f;
+  --btn-hover-bg-color: #e55a5a; 
+  --btn-hover-transform: scale(1.05); 
 }
 
 .btn {
   cursor: pointer;
-  background-color: #9c88ff;
+  background-color: var(--btn-bg-color);
   box-shadow: var(--box-shadow);
   color: #fff;
   border: 0;
   display: block;
-  font-size: 16px;
+  font-size: 18px;
   margin: 10px 0 30px;
-  padding: 10px;
+  padding: 14px;
   width: 100%;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
+
+.btn:hover {
+  background-color: var(--btn-hover-bg-color);
+  transform: var(--btn-hover-transform);
+}
+
 
 .btn:focus,
 .delete-btn:focus {
@@ -114,20 +144,21 @@ input[type='number'] {
 .list li {
   background-color: #fff;
   box-shadow: var(--box-shadow);
-  color: #333;
+  color: var(--text-color);
   display: flex;
   justify-content: space-between;
   position: relative;
-  padding: 10px;
+  padding: 12px;
   margin: 10px 0;
+  border-radius: 4px;
 }
 
 .list li.plus {
-  border-right: 5px solid #2ecc71;
+  border-right: 5px solid var(--secondary-color);
 }
 
 .list li.minus {
-  border-right: 5px solid #c0392b;
+  border-right: 5px solid #e74c3c;
 }
 
 .delete-btn {
@@ -144,6 +175,7 @@ input[type='number'] {
   transform: translate(-100%, -50%);
   opacity: 0;
   transition: opacity 0.3s ease;
+  border-radius: 50%;
 }
 
 .list li:hover .delete-btn {
