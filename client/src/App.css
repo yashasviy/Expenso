@@ -2,13 +2,13 @@
 
 :root {
   --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
-  --primary-color: #4a90e2; /* Blue */
-  --secondary-color: #50e3c2; /* Green */
-  --background-color: #c0d6e4; /* Greyish Blue */
-  --text-color: #333; /* Dark Gray */
-  --btn-bg-color: #e0aabf; /* Greyish-Pink */
-  --btn-hover-bg-color: #d78b9a; /* Darker Greyish-Pink */
-  --btn-hover-transform: scale(1.05); /* Slightly larger on hover */
+  --primary-color: #4a90e2;
+  --secondary-color: #50e3c2; 
+  --background-color: #c0d6e4; 
+  --text-color: #333; 
+  --btn-bg-color: #e0aabf; 
+  --btn-hover-bg-color: #d78b9a;
+  --btn-hover-transform: scale(1.05);
 }
 
 * {
