@@ -7,8 +7,8 @@
   --background-color: #c0d6e4; 
   --text-color: #333; 
   --btn-bg-color: #e0aabf; 
-  --btn-hover-bg-color: #d78b9a;
-  --btn-hover-transform: scale(1.05);
+  --btn-hover-bg-color: #d78b9a; 
+  --btn-hover-transform: scale(1.05); 
 }
 
 * {
@@ -36,11 +36,20 @@ body {
   border-radius: 8px;
 }
 
-h1 {
+/* h1 {
+  font-size: 3em;
   font-weight: 700;
   letter-spacing: 1px;
   margin: 0 0 20px;
-  color: var(--primary-color);
+  color: black;
+} */
+
+h1 {
+  font-size: 3em;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin: 20px 0 10px; 
+  color: black; 
 }
 
 h3 {
@@ -128,7 +137,6 @@ input[type='number'] {
   background-color: var(--btn-hover-bg-color);
   transform: var(--btn-hover-transform);
 }
-
 
 .btn:focus,
 .delete-btn:focus {
