@@ -1,22 +1,72 @@
-# Expenso (MERN)
+# Expenso - Expense Tracker
 
-> Full stack expense tracker
+Welcome to Expenso, your go-to app for keeping tabs on your income and expenses! Built with React, Expenso makes it super easy to manage your money with just a few clicks. It's all about helping you stay on top of your finances without any hassle.
 
-## Usage
+## Getting Started
 
-```
-add your own mongoDB string in config.env
-```
+Before diving in, make sure you've got Node.js and npm installed. If not, you can grab them from [nodejs.org](https://nodejs.org/). Ready? Let's go!
 
-```
- npm install
- cd client npm install
- cd ..
- 
- # Run front and backend
- npm run dev
+1. **Clone the Repo:**
+   ```bash
+   git clone https://github.com/yashasviy/Expenso.git
+   ```
 
-Developed by Yashasvi Yadav and Mohd Yuman
+2. **Navigate to the Project Folder:**
+   ```bash
+   cd Expenso
+   ```
 
-Expenso is an expense tracker that keeps a check on the income, it also tells you how much money you have right now and how much money you have spent.
- 
+3. **Install the Dependencies:**
+   ```bash
+   npm install
+   ```
+
+4. **Start the App:**
+   ```bash
+   npm start
+   ```
+   Your app will be running at `http://localhost:3000`.
+
+5. **Build for Production:**
+   ```bash
+   npm run build
+   ```
+
+## Using Expenso
+
+Adding new entries is a breeze. Just fill in the details and amount, and hit "Add Entry". Remember:
+- Positive amounts = Income
+- Negative amounts = Expenses
+
+
+
+![image](https://github.com/yashasviy/Expenso/assets/142726861/bdc2a629-d495-4337-bd5c-299e8d7d66f7)
+
+
+
+
+
+Your income and expenses will be automatically calculated and displayed at the top. Check out the history section for a quick view of all your past transactions, nicely color-coded so you can easily see what's what.
+
+![image](https://github.com/yashasviy/Expenso/assets/142726861/b8a7871a-8dc5-46ef-93ba-17b6b7693d7b)
+
+
+
+![image](https://github.com/yashasviy/Expenso/assets/142726861/2d8512cf-afe9-4a4c-9c8b-3f1219c47c5f)
+
+![image](https://github.com/yashasviy/Expenso/assets/142726861/7b992df0-ad09-4a67-b052-660fb7ad9d3e)
+
+
+
+
+## What We Used
+
+- **React**: To build the UI.
+- **CSS**: For styling the app.
+
+
+
+And that's it! Expenso is all about making money management simple and stress-free. Dive in and start tracking your finances with ease. Happy tracking!
+
+
+Developed by Mohd Yuman and Yashasvi Yadav
