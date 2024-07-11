@@ -29,12 +29,12 @@ Before diving in, make sure you've got Node.js and npm installed. If not, you ca
    npm install
 
    ```
-   Your app will be running at `http://localhost:3000`.
 
 5. **Start the development server:**
    ```bash
    npm run dev
    ```
+   Your app will be running at `http://localhost:3000`.
 
 ## Using Expenso
 
