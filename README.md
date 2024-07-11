@@ -16,20 +16,24 @@ Before diving in, make sure you've got Node.js and npm installed. If not, you ca
    cd Expenso
    ```
 
-3. **Install the Dependencies:**
+3. **Install the Dependencies for the client:**
    ```bash
+   cd client
    npm install
+
    ```
 
-4. **Start the App:**
+4. **Navigate back to the root directory and install the dependencies:**
    ```bash
-   npm start
+   cd ..
+   npm install
+
    ```
    Your app will be running at `http://localhost:3000`.
 
-5. **Build for Production:**
+5. **Start the development server:**
    ```bash
-   npm run build
+   npm run dev
    ```
 
 ## Using Expenso
